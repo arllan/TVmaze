@@ -10,7 +10,7 @@ describe('StarRating', () => {
     expect(getByText('5')).toBeTruthy();
     expect(getByTestId('starIcon')).toBeTruthy();
   });
-  test('if there is not rating show nothing ', () => {
+  test('if there is not rating show nothing', () => {
     const {container, queryByTestId} = render(<StarRating />);
 
     expect(queryByTestId('starIcon')).toBeNull();
