@@ -53,6 +53,10 @@
       "./node_modules/react-native-gesture-handler/jestSetup.js",
       "./jestSetupFile.js"
     ],
+    "moduleDirectories": [
+      "node_modules",
+      "./src/utils"
+    ],
     "moduleFileExtensions": [
       "ts",
       "tsx",

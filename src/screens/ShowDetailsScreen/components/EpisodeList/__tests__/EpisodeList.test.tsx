@@ -1,23 +1,9 @@
 import React from 'react';
-import {render} from '@testing-library/react-native';
 import {EpisodeList} from '../EpisodeList';
 
 import {mocks} from './mocks';
-import {QueryClient, QueryClientProvider, setLogger} from 'react-query';
 import {showService} from '../../../../../services/show/showService';
-
-const queryClient = new QueryClient({
-  defaultOptions: {
-    queries: {
-      cacheTime: Infinity,
-      retry: false,
-    },
-  },
-});
-
-const wrapper = ({children}) => (
-  <QueryClientProvider client={queryClient}>{children}</QueryClientProvider>
-);
+import {render} from 'test-utils';
 
 describe('EpisodeList', () => {
   test('first render show all season one episodes', () => {
@@ -27,7 +13,7 @@ describe('EpisodeList', () => {
       },
       seasonNames: [],
     });
-    render(<EpisodeList show={mocks.show} />, {wrapper});
+    render(<EpisodeList show={mocks.show} />);
 
     expect(true).toBeTruthy();
   });
