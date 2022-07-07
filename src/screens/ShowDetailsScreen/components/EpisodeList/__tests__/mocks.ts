@@ -91,8 +91,68 @@ const episode2: Episode = {
   },
 };
 
+const episode22: Episode = {
+  id: 321626,
+  url: 'https://www.tvmaze.com/episodes/321626/kirby-buckets-2x02-the-gil-in-my-life',
+  name: 'The Gil in My Life',
+  season: 2,
+  number: 2,
+  type: 'regular',
+  airdate: '2015-10-14',
+  airtime: '20:00',
+  airstamp: '2015-10-15T00:00:00+00:00',
+  runtime: 30,
+  rating: {
+    average: null,
+  },
+  image: {
+    medium:
+      'https://static.tvmaze.com/uploads/images/medium_landscape/303/759630.jpg',
+    original:
+      'https://static.tvmaze.com/uploads/images/original_untouched/303/759630.jpg',
+  },
+  summary:
+    '<p>Kirby launches his own web channel named Kirblammo, but Dawn, tired of always being overshadowed, hijacks his channel to try and ruin his big day.</p>',
+  _links: {
+    self: {
+      href: 'https://api.tvmaze.com/episodes/321626',
+    },
+  },
+};
+
+const episode23: Episode = {
+  id: 321627,
+  url: 'https://www.tvmaze.com/episodes/321627/kirby-buckets-2x03-the-school-spirit',
+  name: 'The School Spirit',
+  season: 2,
+  number: 3,
+  type: 'regular',
+  airdate: '2015-10-21',
+  airtime: '20:00',
+  airstamp: '2015-10-22T00:00:00+00:00',
+  runtime: 30,
+  rating: {
+    average: null,
+  },
+  image: {
+    medium:
+      'https://static.tvmaze.com/uploads/images/medium_landscape/303/759631.jpg',
+    original:
+      'https://static.tvmaze.com/uploads/images/original_untouched/303/759631.jpg',
+  },
+  summary:
+    '<p>Fish is possessed by a spirit when the boys dig up an ancient mascot.</p>',
+  _links: {
+    self: {
+      href: 'https://api.tvmaze.com/episodes/321627',
+    },
+  },
+};
+
 export const mocks = {
   show,
   episode1,
   episode2,
+  episode22,
+  episode23,
 };
