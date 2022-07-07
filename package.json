@@ -57,6 +57,9 @@
       "node_modules",
       "./src/utils"
     ],
+    "modulePathIgnorePatterns": [
+      "mocks"
+    ],
     "moduleFileExtensions": [
       "ts",
       "tsx",
